@@ -1,0 +1,18 @@
+<div class="content">
+	<h1>Hozzáférési engedély szükséges!</h1>
+	<p>
+		Ahhoz, hogy elérjük a naptárokat, engedélyezned kell az alkamazás hozzáférést!<br />
+		A hozzáférések sessionben tárolódnak, így a böngészőből kilépve elvesznek!*
+	<p>
+	<p><strong>1. </strong> Kattints az "Engedély megadása gombra, majd a megnyíló oldalról másold ki a kódot! (Ne zárd be ezt az ablakot!)</p>
+	<div class="form-holder"><a href="[AUTH_URL]" target="_blank" class="button blue">Engedély megadása</a></div>
+	<p><strong>2. </strong> Másold be az oldalon található kódot a lenti szövegmezőbe és kattints az "OK" gombra!</p>
+	<div class="form-holder">
+		<form method="post" action="index.php">
+			<input type="text" name="authCode" value="" class="form-item" style="margin-right:10px" placeholder="Authorizációs kód" /><input type="submit" value="OK" class="button blue" />
+		</form>
+	</div>
+	<div class="form-holder small-print">
+		*: Ezeket a sessiönöket csupán addig használjuk, amíg be vagy jelentkezve, semmilyen formában nem élünk vissza velük és [SESSION_HOURS] óra elteltével szerverünkről is automatikusan törlődnek.
+	</div>
+</div>

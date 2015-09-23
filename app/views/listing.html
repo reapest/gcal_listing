@@ -1,0 +1,19 @@
+<div class="content">
+	<h1>Ezek a naptáraid</h1>
+	<p>
+		Íme naptáraid listája:
+	<p>
+	<div class="list-holder">[CALENDAR_LIST]</div>
+	<p><strong>Esemény létrehozása: </strong> Automatikusan létrehozhatunk neked egy kamu eseményt "Dummy Event" néven másnap délre, ha választasz egy naptárat és rákattintasz az "OK" gombra!</p>
+	<div class="form-holder">
+		<form method="post" action="index.php">
+			<select name="calendarId" class="form-item" style="margin-right:10px">
+				[CALENDAR_LIST_OPTIONS]
+			</select>
+			<input type="submit" value="OK" class="button blue" />
+			<input type="hidden" name="addEvent" value="addEvent" />
+		</form>
+	</div>
+	<div class="form-holder" style="float:right";><a href="index.php?logout=1" class="button">Kilépés</a></div>
+	<div class="clear"></div>
+</div>
